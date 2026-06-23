@@ -594,7 +594,7 @@ p {
   padding-bottom:15px;
 }
 .bottom_header .logo_holder {
-  background: url(../../images/Logos/main-logo.jpeg) no-repeat left center;
+  background: url(../../images/Logos/circle-logo.png) no-repeat left center;
   background-size: contain;
   height:70px;
   margin-top:20px;
@@ -1513,7 +1513,7 @@ p {
     left: 13px;
 }
 .stay_with_finance .text_container span.logo {
-  background: url(../../images/Logos/main-logo.jpeg) no-repeat left center;
+  background: url(../../images/Logos/circle-logo.png) no-repeat left center;
   background-size: contain;
   display: block;
   height:79px;
@@ -1824,7 +1824,7 @@ footer .footer_logo p {
     margin-bottom: 33px;
 }
 footer .footer_logo a.logo {
-  background: url(../../images/Logos/main-logo.jpeg) no-repeat left center;
+  background: url(../../images/Logos/circle-logo.png) no-repeat left center;
   background-size: contain;
   display: block;
   height:79px;
@@ -4790,6 +4790,7 @@ form input:-moz-placeholder {
   position: fixed;
   top:95px;
   z-index: 999999;
+  display: none !important;
 }
 
 .switcher .switch_menu {
