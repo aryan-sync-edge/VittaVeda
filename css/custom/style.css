@@ -97,6 +97,9 @@ This files contents are outlined below>>>>>
   src: url('../../fonts/kepler-std/Kepler-Std-Bold.ttf');
  }
 
+html, body {
+  overflow-x: hidden;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -602,7 +605,7 @@ p {
   height:100%;
 }
 .bottom_header .address_container {
-  padding-left:71px;
+  padding-left:20px;
   padding-top:26px;
 }
 .bottom_header .address_container>div {
