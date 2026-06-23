@@ -1777,16 +1777,25 @@ p {
 .our_partners ul li {
   display: inline-block;
 }
+
 .our_partners ul li a {
-  display: block;
-  width:210px;
-  height:115px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 115px;
   border: 1px solid rgba(255,255,255, 0.2);
-  text-align: center;
-  margin-right:26px;
+  margin-right: 26px;
 }
 .our_partners ul li a img {
-  padding:29px 0;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 15px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 .our_partners ul li:last-child a {
   margin-right: 0;
