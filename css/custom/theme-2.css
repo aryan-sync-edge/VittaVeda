@@ -264,8 +264,8 @@ article.news_post .single_news_post .img_container:before,
 
 /* change the theme logo for your own color schemes */
 
-.bottom_header .logo_holder {
-  background: url(../../images/Logos/circle-logo.png) no-repeat left center;
+.main_menu .logo_holder {
+  background: #fff url(../../images/Logos/circle-logo.png) no-repeat center;
   background-size: contain;
 }
 

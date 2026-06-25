@@ -97,6 +97,9 @@ This files contents are outlined below>>>>>
   src: url('../../fonts/kepler-std/Kepler-Std-Bold.ttf');
  }
 
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   overflow-x: hidden;
 }
@@ -593,13 +596,19 @@ p {
 .bottom_header {
   padding-bottom:15px;
 }
-.bottom_header .logo_holder {
-  background: url(../../images/Logos/circle-logo.png) no-repeat left center;
+.main_menu .logo_holder {
+  background: #fff url(../../images/Logos/circle-logo.png) no-repeat center;
   background-size: contain;
-  height:70px;
-  margin-top:20px;
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  float: left;
+  display: block;
 }
-.bottom_header .logo_holder a {
+.main_menu .logo_holder a {
   display: inline-block;
   width:100%;
   height:100%;
@@ -5045,3 +5054,12 @@ form input:-moz-placeholder {
 .cf-validation label.error {display: none !important;}
 .cf-validation input.error,
 .cf-validation textarea.error {border-color: red;}
+
+/* Custom Animated Map Styles */
+.animated-map {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.animated-map:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}

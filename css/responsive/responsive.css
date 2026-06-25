@@ -315,10 +315,9 @@
 	.checkout .shipping_address {
 		margin-top:35px;
 	}
-	.bottom_header .logo_holder {
-		width:239px;
-		margin: 39px auto 0 auto;
-		float:none;
+	.main_menu .logo_holder {
+		margin-top: 10px;
+		float: left !important;
 	}
 	.parallax h3 {
 		line-height: 35px;
