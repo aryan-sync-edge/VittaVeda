@@ -329,9 +329,10 @@
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-toggle {
-		float:left;
-		left: 30px;
-    	top: 9px;
+		float:right;
+		left: auto;
+		right: 15px;
+    	top: 14px;
     	border-radius: 0px;
 	    -moz-border-radius: 0px;
 	    -webkit-border-radius: 0px;
@@ -368,7 +369,7 @@
 		padding-left: 30px;
 	}
 	.main_menu .nav>li a {
-		padding: 10px 0px 10px 30px;
+		padding: 12px 0px 10px 24px;
 		font-size: 14px;
 	}
 	.main_menu .nav li .sub-menu li a {
@@ -377,7 +378,7 @@
 		background: transparent;
 	}
 	.main_menu .nav>li a:hover {
-		padding-left: 38px;
+		padding-left: 32px;
 		-webkit-transition: all 0.2s ease 0s;
 		-o-transition: all 0.2s ease 0s;
 		transition: all 0.2s ease 0s;
@@ -406,6 +407,14 @@
 	}
 	.main_menu .nav>li:before {
 		display: none;
+	}
+	.main_menu .navbar-header {
+		width: 100%;
+		position: relative;
+	}
+	.main_menu .logo_holder {
+		float: left !important;
+		margin-top: 6px;
 	}
 	.main_menu nav {
 		height:auto;
@@ -1082,10 +1091,18 @@
 	.main_menu .nav>li>.sub-menu {transition: none !important;}
 	.main_menu .navbar-default {width: 100%;padding: 0 15px;}
 	.navbar-nav {margin: 0;}
+	.main_menu .navbar-toggle {
+		position: absolute;
+		right: 15px;
+		left: auto;
+	}
 }
 
 @media (max-width: 767px) {
-	.navbar-default .navbar-toggle {left: 0;}
+	.navbar-default .navbar-toggle {
+		right: 15px;
+		left: auto;
+	}
 	.main_menu .search_icon {right: 15px;}
 	.main_menu #search {right: auto;left:0;width: 87%;}
 }
@@ -1094,3 +1111,106 @@
   Enabling expandable menu on table 
   updated on 7 august 2016
 ------------------------------------------------*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.bottom_header .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.main_menu .logo_holder {
+	overflow: hidden;
+}
+
+.main_menu .logo_holder a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.main_menu .logo_holder .brand_logo {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.banner_actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	align-items: center;
+}
+
+.hero_cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 13px 22px;
+	border-radius: 999px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	border: 2px solid transparent;
+}
+
+.hero_cta_primary {
+	background: #1a8bb3;
+	color: #fff !important;
+	box-shadow: 0 10px 22px rgba(26, 139, 179, 0.24);
+}
+
+.hero_cta_secondary {
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff !important;
+	border-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero_cta:hover,
+.hero_cta:focus {
+	transform: translateY(-2px);
+}
+
+body.js-enabled .reveal-item {
+	opacity: 0;
+	transform: translateY(24px);
+	transition: opacity 0.65s ease, transform 0.65s ease;
+	will-change: opacity, transform;
+}
+
+body.js-enabled .reveal-item.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+	.bottom_header .row {
+		display: block;
+	}
+
+	.banner_actions {
+		gap: 10px;
+	}
+
+	.hero_cta {
+		padding: 11px 18px;
+		font-size: 12px;
+	}
+
+	.main_menu .logo_holder {
+		width: 56px;
+		height: 56px;
+		margin-left: 0;
+	}
+}

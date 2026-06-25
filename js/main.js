@@ -133,6 +133,42 @@ function owlCarouselFooter () {
   };
 }
 
+function pageRevealAnimations () {
+  var revealItems = document.querySelectorAll('.reveal-item');
+
+  if (!revealItems.length) {
+    return;
+  }
+
+  document.body.classList.add('js-enabled');
+
+  if (!('IntersectionObserver' in window)) {
+    revealItems.forEach(function (item) {
+      item.classList.add('is-visible');
+    });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries, currentObserver) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        currentObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.18,
+    rootMargin: '0px 0px -8% 0px'
+  });
+
+  revealItems.forEach(function (item, index) {
+    if (!item.style.transitionDelay) {
+      item.style.transitionDelay = (index % 6) * 90 + 'ms';
+    }
+    observer.observe(item);
+  });
+}
+
 function thmAccrodion () {
   if ($('#accordion > .panel').length) {
     $('#accordion > .panel').on('show.bs.collapse', function (e) {
@@ -354,6 +390,7 @@ jQuery(document).on('ready', function () {
     CounterNumberChanger();
     owlCarousel();
     owlCarouselFooter();
+    pageRevealAnimations();
     thmAccrodion();
     priceRanger();
     swithcerMenu();
