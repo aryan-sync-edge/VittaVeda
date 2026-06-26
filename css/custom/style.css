@@ -256,7 +256,7 @@ img {
 /* 2. Hero Section */
 .hero {
   position: relative;
-  background: url('../../images/home/banner.jpg') no-repeat center;
+  background: url('../../images/Logos/Hero_section/4.png') no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 80px);
   display: flex;
