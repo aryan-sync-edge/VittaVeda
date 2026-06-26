@@ -61,7 +61,7 @@ function thmMainSlider () {
       },      
       responsiveLevels:[2020,1183,975,751,484],
             gridwidth:[1170,970,750,500,450],
-            gridheight:[650,650,650,500,400],
+            gridheight:[720,720,720,550,450],
             shadow:0,
             spinner:"off",
             autoHeight:"off",
