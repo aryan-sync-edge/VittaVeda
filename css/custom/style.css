@@ -860,7 +860,11 @@ p {
 }
 /*============================ Banner ============================*/
 .banner {
+  position: relative;
+  overflow: hidden;
   margin-top: 15px;
+  height: 640px;
+  min-height: 640px;
 }
 .mobile-nav-contact {
   display: none;
@@ -1001,6 +1005,205 @@ p {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.banner .hero-slider,
+.banner .hero-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.banner .hero-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.banner .hero-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.02);
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+}
+.banner .hero-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+.banner .slide_1 {
+  background-image: url(../../images/Logos/Hero_section/2.png);
+}
+.banner .slide_2 {
+  background-image: url(../../images/Logos/Hero_section/4.png);
+}
+.banner .slide_3 {
+  background-image: url(../../images/Logos/Hero_section/3.png);
+}
+.banner .hero-content {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 160px);
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.banner .hero-content--left {
+  margin-left: 80px;
+  margin-right: auto;
+  align-items: flex-start;
+  text-align: left;
+}
+.banner .hero-content--center {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+.banner .hero-content--right {
+  margin-left: auto;
+  margin-right: 80px;
+  align-items: flex-end;
+  text-align: right;
+}
+.banner .hero-content .title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  margin-bottom: 0;
+}
+.banner .hero-content .title_container h6 {
+  margin: 0;
+}
+.banner .hero-content .title_container span.decor_default,
+.banner .hero-content .title_container span.decor-equal {
+  margin-top: 19px;
+}
+.banner .hero-content .title_container span.decor_default {
+  margin-left: 26px;
+}
+.banner .hero-content--center .title_container span.decor_default,
+.banner .hero-content--center .title_container span.decor-equal {
+  margin-left: 0;
+}
+.banner .hero-content--right .title_container span.decor_default {
+  margin-left: 0;
+  margin-right: 26px;
+}
+.banner .hero-content--right .title_container span.decor_default:before {
+  left: auto;
+  right: -28px;
+}
+.banner .hero-content--right .title_container span.decor_default:after {
+  left: auto;
+  right: 16px;
+  width: 80px;
+}
+.banner .hero-slide .hero_title h1 {
+  margin: 0;
+  line-height: 1.08;
+  max-width: 720px;
+}
+.banner .hero-slide .banner_heading p {
+  margin: 0;
+  max-width: 640px;
+}
+.banner .banner_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: inherit;
+}
+.banner .hero-content--left .banner_actions {
+  justify-content: flex-start;
+}
+.banner .hero-content--center .banner_actions {
+  justify-content: center;
+}
+.banner .hero-content--right .banner_actions {
+  justify-content: flex-end;
+}
+.banner .hero-slide.active,
+#hero-slide-1:checked ~ .hero-viewport .slide_1,
+#hero-slide-2:checked ~ .hero-viewport .slide_2,
+#hero-slide-3:checked ~ .hero-viewport .slide_3 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  z-index: 1;
+  pointer-events: auto;
+}
+.banner .hero-nav {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: none;
+  pointer-events: none;
+}
+.banner .hero-nav label {
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.banner .hero-nav label.tp-leftarrow {
+  left: 30px;
+}
+.banner .hero-nav label.tp-rightarrow {
+  right: 30px;
+}
+#hero-slide-1:checked ~ .hero-nav-1,
+#hero-slide-2:checked ~ .hero-nav-2,
+#hero-slide-3:checked ~ .hero-nav-3 {
+  display: block;
+}
+.banner .hero-bullets {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 28px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.banner .hero-bullet {
+  position: relative;
+  cursor: pointer;
+}
+#hero-slide-1:checked ~ .hero-bullets .hero-bullet-1,
+#hero-slide-2:checked ~ .hero-bullets .hero-bullet-2,
+#hero-slide-3:checked ~ .hero-bullets .hero-bullet-3 {
+  background: #fff;
+}
+#hero-slide-1:checked ~ .hero-bullets .hero-bullet-1:before,
+#hero-slide-2:checked ~ .hero-bullets .hero-bullet-2:before,
+#hero-slide-3:checked ~ .hero-bullets .hero-bullet-3:before {
+  width: 100%;
+}
+.banner .title_container span.decor_default:before,
+.banner .title_container span.decor_default:after {
+  background: #1a8bb3;
+}
+.banner .title_container span.decor-equal:before,
+.banner .title_container span.decor-equal:after {
+  background: #1a8bb3;
+}
+.banner .title_container span.decor_default:after {
+  width: 80px;
 }
 /*=========================== Welcome finance press ==================*/
 
@@ -1668,6 +1871,43 @@ p {
   border-radius: 0;
   padding: 13px;
   outline: none;
+}
+.consultation .contact_field,
+.consultation .single_form .ui-selectmenu-button {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
+  animation: consultationFieldIn 0.55s ease both;
+}
+.consultation .contact_field_1,
+.consultation .contact_field_2,
+.consultation .contact_field_3,
+.consultation .contact_field_4,
+.consultation .contact_field_5,
+.consultation .contact_field_6 {
+  animation-delay: 0.04s;
+}
+.consultation .contact_field_2 { animation-delay: 0.08s; }
+.consultation .contact_field_3 { animation-delay: 0.12s; }
+.consultation .contact_field_4 { animation-delay: 0.16s; }
+.consultation .contact_field_5,
+.consultation .single_form .ui-selectmenu-button { animation-delay: 0.20s; }
+.consultation .contact_field_6 { animation-delay: 0.24s; }
+.consultation .contact_field:hover,
+.consultation .contact_field:focus,
+.consultation .single_form .ui-selectmenu-button:hover,
+.consultation .single_form .ui-selectmenu-button:focus {
+  transform: translateY(-2px);
+  border-color: #1a8bb3;
+  box-shadow: 0 10px 24px rgba(26, 139, 179, 0.12);
+}
+@keyframes consultationFieldIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .consultation .submit_now {
   margin-top:37px;
@@ -5148,4 +5388,15 @@ form input:-moz-placeholder {
 .animated-map:hover {
   transform: translateY(-8px) scale(1.01);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom Animated Consultation Form Styles */
+#consultation-form {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  backface-visibility: hidden;
+  will-change: transform, box-shadow;
+}
+#consultation-form:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(11, 60, 77, 0.15) !important;
 }
