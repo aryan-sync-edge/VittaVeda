@@ -1552,7 +1552,151 @@ footer {
 	}
 }
 
-/* ==========================================================================
+@media (max-width: 991px) {
+	body.privacy .inner_banner {
+		height: auto;
+		padding: 28px 0 18px;
+	}
+
+	body.privacy .inner_banner h1 {
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	body.privacy .breadcrumb_sec {
+		height: auto;
+		padding: 10px 0;
+	}
+
+	body.privacy .breadcrumb_sec .row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	body.privacy .breadcrumb_sec .col-lg-8,
+	body.privacy .breadcrumb_sec .col-lg-4 {
+		width: 100%;
+		text-align: left !important;
+	}
+
+	body.privacy .breadcrumb_sec ul {
+		text-align: left;
+		padding-top: 6px;
+	}
+
+	body.privacy .about_finance_press {
+		padding-top: 42px;
+		padding-left: 0;
+	}
+
+	body.privacy .about_finance_press .container {
+		padding-bottom: 18px;
+	}
+
+	body.privacy .finance_text,
+	body.privacy .mission_value {
+		padding-top: 0;
+		padding-bottom: 28px;
+		background: none;
+	}
+
+	body.privacy .about_finance_press .some_speach {
+		padding-left: 0;
+		margin-top: 16px;
+	}
+
+	body.privacy .finance_text h3,
+	body.privacy .mission_value h3 {
+		font-size: 28px;
+		line-height: 1.35;
+	}
+
+	body.privacy .finance_text p,
+	body.privacy .mission_value p,
+	body.privacy .mission_value ul li {
+		font-size: 15px;
+		line-height: 1.7;
+	}
+}
+
+@media (max-width: 767px) {
+	body.privacy .inner_banner {
+		padding: 22px 0 14px;
+	}
+
+	body.privacy .inner_banner h1 {
+		font-size: 24px;
+		line-height: 1.25;
+	}
+
+	body.privacy .breadcrumb_sec h5 {
+		font-size: 16px;
+	}
+
+	body.privacy .breadcrumb_sec ul li,
+	body.privacy .breadcrumb_sec ul li a {
+		font-size: 13px;
+	}
+
+	body.privacy .about_finance_press {
+		padding-top: 30px;
+	}
+
+	body.privacy .finance_text,
+	body.privacy .mission_value {
+		padding-bottom: 18px;
+	}
+
+	body.privacy .finance_text h3,
+	body.privacy .mission_value h3 {
+		font-size: 22px;
+		line-height: 1.35;
+	}
+
+	body.privacy .finance_text p,
+	body.privacy .mission_value p,
+	body.privacy .mission_value ul li {
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	body.privacy .mission_value ul {
+		padding-left: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	body.privacy .inner_banner {
+		padding: 18px 0 12px;
+	}
+
+	body.privacy .inner_banner h1 {
+		font-size: 20px;
+	}
+
+	body.privacy .breadcrumb_sec h5 {
+		font-size: 15px;
+	}
+
+	body.privacy .breadcrumb_sec ul li,
+	body.privacy .breadcrumb_sec ul li a {
+		font-size: 12px;
+	}
+
+	body.privacy .finance_text h3,
+	body.privacy .mission_value h3 {
+		font-size: 20px;
+	}
+
+	body.privacy .finance_text p,
+	body.privacy .mission_value p,
+	body.privacy .mission_value ul li {
+		font-size: 13px;
+	}
+}
+
+/* ========================================================================== 
    Premium Collapsed Mobile Menu Layout Override
    ========================================================================== */
 @media (max-width: 1024px) {
