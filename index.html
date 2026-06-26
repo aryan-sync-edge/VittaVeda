@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="VittaVeda Financial Services - Expert financial planning, wealth management, loans, and investment strategies.">
+	<meta name="description"
+		content="VittaVeda Financial Services - Expert financial planning, wealth management, loans, and investment strategies.">
 	<title>VittaVeda - Financial & Wealth Advisory Services</title>
-	
+
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/Logos/circle-logo.png">
-	
+
 	<!-- CDNs -->
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-	
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
 	<!-- Font Awesome 6 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	
+
 	<!-- Chart.js -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 	<!-- Main Theme Style Sheet -->
 	<link rel="stylesheet" type="text/css" href="css/custom/style.css">
 </head>
+
 <body>
 
 	<!-- SECTION 1 — STICKY NAVBAR -->
 	<nav class="navbar" id="navbar">
 		<div class="nav-container">
 			<div class="nav-brand">
-				<div class="logo-circle" style="border: none; background: none; display: flex; align-items: center; justify-content: center;">
-					<img src="images/Logos/circle-logo.png" alt="VittaVeda Circle Logo" style="width: 44px; height: 44px; border-radius: 50%; object-fit: contain;">
+				<div class="logo-circle"
+					style="border: none; background: none; display: flex; align-items: center; justify-content: center;">
+					<img src="images/Logos/circle-logo.png" alt="VittaVeda Circle Logo"
+						style="width: 44px; height: 44px; border-radius: 50%; object-fit: contain;">
 				</div>
-				<span class="brand-text" style="margin-left: 8px;">VITTA VEDA <span class="sub-brand">FINANCIAL SERVICES</span></span>
+				<span class="brand-text" style="margin-left: 8px;">VITTA VEDA <span class="sub-brand">FINANCIAL
+						SERVICES</span></span>
 			</div>
 			<ul class="nav-menu" id="nav-menu">
 				<li><a href="#hero" class="nav-link">Home</a></li>
@@ -67,41 +75,47 @@
 			<!-- Left column -->
 			<div class="hero-left reveal-item">
 				<p class="eyebrow">SMART PLANNING. SECURE FUTURE.</p>
-				<h1>Empowering Your <br><span class="highlight" style="color: #1e8bb3;">Financial</span> Journey with Expert Advice</h1>
-				<p class="subparagraph">Personalized financial strategies to help you grow, protect, and manage your wealth with confidence.</p>
+				<h1>Empowering Your <br><span class="highlight" style="color: #1e8bb3;">Financial</span> Journey with
+					Expert Advice</h1>
+				<p class="subparagraph">Personalized financial strategies to help you grow, protect, and manage your
+					wealth with confidence.</p>
 				<div class="hero-buttons">
-					<a href="#contact" class="btn-primary">Get Free Consultation <i class="fa-solid fa-arrow-right"></i></a>
+					<a href="#contact" class="btn-primary">Get Free Consultation <i
+							class="fa-solid fa-arrow-right"></i></a>
 					<a href="#services" class="btn-outline">Our Services <i class="fa-solid fa-arrow-right"></i></a>
 				</div>
 			</div>
-			
+
 			<!-- Right column: Custom Gold Chart -->
 			<div class="hero-right reveal-item">
 				<div class="chart-card">
 					<div class="chart-card-decor-line"></div>
-					
+
 					<!-- Chart Wrapper -->
 					<div class="chart-wrapper">
 						<!-- concentric rings and scattered dots -->
 						<svg class="chart-bg-decor" viewBox="0 0 400 250">
-							<circle cx="340" cy="100" r="130" stroke="rgba(200, 169, 110, 0.08)" stroke-width="1.5" fill="none" />
-							<circle cx="340" cy="100" r="90" stroke="rgba(200, 169, 110, 0.06)" stroke-width="1.2" fill="none" />
-							<circle cx="340" cy="100" r="50" stroke="rgba(200, 169, 110, 0.04)" stroke-width="1" fill="none" />
+							<circle cx="340" cy="100" r="130" stroke="rgba(200, 169, 110, 0.08)" stroke-width="1.5"
+								fill="none" />
+							<circle cx="340" cy="100" r="90" stroke="rgba(200, 169, 110, 0.06)" stroke-width="1.2"
+								fill="none" />
+							<circle cx="340" cy="100" r="50" stroke="rgba(200, 169, 110, 0.04)" stroke-width="1"
+								fill="none" />
 							<circle cx="80" cy="60" r="1.5" fill="rgba(200, 169, 110, 0.25)" />
 							<circle cx="270" cy="40" r="1" fill="rgba(200, 169, 110, 0.3)" />
 							<circle cx="310" cy="180" r="2" fill="rgba(200, 169, 110, 0.2)" />
 							<circle cx="140" cy="160" r="1" fill="rgba(200, 169, 110, 0.35)" />
 						</svg>
-						
+
 						<!-- Low Y axis label -->
 						<span class="chart-y-axis-label">Low</span>
-						
+
 						<!-- Canvas -->
 						<canvas id="heroChart"></canvas>
-						
+
 						<!-- Glowing Pulse Dot -->
 						<div class="glowing-pulse-dot" id="glowingDot" style="display: none;"></div>
-						
+
 						<!-- Floating Experience Overlay Card -->
 						<div class="floating-experience-card">
 							<span class="exp-num">18+</span>
@@ -120,15 +134,20 @@
 			<div class="about-left" id="about-left-col">
 				<span class="section-eyebrow">ABOUT VITTAVEDA</span>
 				<h2>More Than 1000 Financial Planners, One Philosophy – <span class="highlight">VittaVeda</span></h2>
-				<p class="about-body">At VittaVeda, we believe that wealth management is not just about numbers; it's about life planning. Our rigorous training programs and research-backed methodologies ensure that every financial plan is tailored to your unique lifecycle goals. We blend academic rigor with behavioral finance insights to protect your wealth and guide your path toward financial independence.</p>
-				<a href="#contact" class="analysis-link">Get Your Free Financial Analysis <i class="fa-solid fa-arrow-right"></i></a>
+				<p class="about-body">At VittaVeda, we believe that wealth management is not just about numbers; it's
+					about life planning. Our rigorous training programs and research-backed methodologies ensure that
+					every financial plan is tailored to your unique lifecycle goals. We blend academic rigor with
+					behavioral finance insights to protect your wealth and guide your path toward financial
+					independence.</p>
+				<a href="#contact" class="analysis-link">Get Your Free Financial Analysis <i
+						class="fa-solid fa-arrow-right"></i></a>
 			</div>
-			
+
 			<!-- Right Column -->
 			<div class="about-right reveal-item">
 				<div class="about-right-card">
 					<span class="section-eyebrow">OUR MISSION & VALUES</span>
-					
+
 					<!-- Accordion -->
 					<div class="accordion">
 						<div class="accordion-item active">
@@ -137,7 +156,8 @@
 								<span class="icon"><i class="fa-solid fa-minus"></i></span>
 							</button>
 							<div class="accordion-content" style="max-height: 200px;">
-								<p>To democratize professional financial advisory, ensuring every family has access to evidence-based wealth protection and generation planning.</p>
+								<p>To democratize professional financial advisory, ensuring every family has access to
+									evidence-based wealth protection and generation planning.</p>
 							</div>
 						</div>
 						<div class="accordion-item">
@@ -146,7 +166,8 @@
 								<span class="icon"><i class="fa-solid fa-plus"></i></span>
 							</button>
 							<div class="accordion-content">
-								<p>We combine scientific asset allocation, data-driven research, and transparent coaching to help you build resilient portfolios for long-term growth.</p>
+								<p>We combine scientific asset allocation, data-driven research, and transparent
+									coaching to help you build resilient portfolios for long-term growth.</p>
 							</div>
 						</div>
 						<div class="accordion-item">
@@ -155,14 +176,15 @@
 								<span class="icon"><i class="fa-solid fa-plus"></i></span>
 							</button>
 							<div class="accordion-content">
-								<p>Academic rigor meets client-first integrity. We focus on risk management first, enabling you to capture market returns with peace of mind.</p>
+								<p>Academic rigor meets client-first integrity. We focus on risk management first,
+									enabling you to capture market returns with peace of mind.</p>
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- Typewriter Statement -->
 					<p class="bold-tagline"><span id="typing-text"></span><span class="typing-cursor">|</span></p>
-					
+
 					<!-- 6 Value Vertical Marquee Loop -->
 					<div class="value-marquee-container">
 						<div class="value-marquee-track" id="value-marquee-track">
@@ -207,11 +229,13 @@
 					<div class="title-underline"></div>
 				</div>
 				<div class="carousel-nav">
-					<button class="carousel-btn prev-btn" id="srv-prev" aria-label="Previous service"><i class="fa-solid fa-chevron-left"></i></button>
-					<button class="carousel-btn next-btn" id="srv-next" aria-label="Next service"><i class="fa-solid fa-chevron-right"></i></button>
+					<button class="carousel-btn prev-btn" id="srv-prev" aria-label="Previous service"><i
+							class="fa-solid fa-chevron-left"></i></button>
+					<button class="carousel-btn next-btn" id="srv-next" aria-label="Next service"><i
+							class="fa-solid fa-chevron-right"></i></button>
 				</div>
 			</div>
-			
+
 			<div class="carousel-viewport">
 				<div class="carousel-track" id="srv-track">
 					<!-- Card 1 -->
@@ -220,7 +244,8 @@
 							<i class="fa-solid fa-chart-pie"></i>
 						</div>
 						<h3>Mutual Fund</h3>
-						<p>Grow your wealth with our professionally managed mutual fund portfolios tailored to your risk appetite.</p>
+						<p>Grow your wealth with our professionally managed mutual fund portfolios tailored to your risk
+							appetite.</p>
 					</div>
 					<!-- Card 2 -->
 					<div class="service-card">
@@ -228,7 +253,8 @@
 							<i class="fa-solid fa-shield-halved"></i>
 						</div>
 						<h3>Insurance</h3>
-						<p>Secure your family's future and safeguard your valuable assets with our comprehensive insurance plans.</p>
+						<p>Secure your family's future and safeguard your valuable assets with our comprehensive
+							insurance plans.</p>
 					</div>
 					<!-- Card 3 -->
 					<div class="service-card">
@@ -236,7 +262,8 @@
 							<i class="fa-solid fa-chart-line"></i>
 						</div>
 						<h3>Share Trading</h3>
-						<p>Maximize your stock market returns through expert share trading strategies and real-time market insights.</p>
+						<p>Maximize your stock market returns through expert share trading strategies and real-time
+							market insights.</p>
 					</div>
 					<!-- Card 4 -->
 					<div class="service-card">
@@ -244,7 +271,8 @@
 							<i class="fa-solid fa-hand-holding-dollar"></i>
 						</div>
 						<h3>Loans</h3>
-						<p>Get quick access to hassle-free personal, business, and home loans with competitive interest rates.</p>
+						<p>Get quick access to hassle-free personal, business, and home loans with competitive interest
+							rates.</p>
 					</div>
 					<!-- Card 5 -->
 					<div class="service-card">
@@ -252,7 +280,8 @@
 							<i class="fa-solid fa-helmet-safety"></i>
 						</div>
 						<h3>Construction Finance</h3>
-						<p>Fund your real estate development and construction projects with our flexible financing solutions.</p>
+						<p>Fund your real estate development and construction projects with our flexible financing
+							solutions.</p>
 					</div>
 					<!-- Card 6 -->
 					<div class="service-card">
@@ -260,7 +289,8 @@
 							<i class="fa-solid fa-gears"></i>
 						</div>
 						<h3>Project Finance</h3>
-						<p>Specialized capital structuring and funding solutions for large-scale corporate and infrastructure projects.</p>
+						<p>Specialized capital structuring and funding solutions for large-scale corporate and
+							infrastructure projects.</p>
 					</div>
 					<!-- Card 7 -->
 					<div class="service-card">
@@ -268,7 +298,8 @@
 							<i class="fa-solid fa-store"></i>
 						</div>
 						<h3>MSME Finance</h3>
-						<p>Empower your micro, small, and medium enterprises with customized business credit and working capital.</p>
+						<p>Empower your micro, small, and medium enterprises with customized business credit and working
+							capital.</p>
 					</div>
 					<!-- Card 8 -->
 					<div class="service-card">
@@ -276,7 +307,8 @@
 							<i class="fa-solid fa-handshake"></i>
 						</div>
 						<h3>Realestate Buy & Sale</h3>
-						<p>Expert assistance in buying, selling, and leasing residential or commercial properties seamlessly.</p>
+						<p>Expert assistance in buying, selling, and leasing residential or commercial properties
+							seamlessly.</p>
 					</div>
 				</div>
 			</div>
@@ -288,15 +320,18 @@
 		<div class="why-choose-container">
 			<!-- Left Column: Testimonial Gallery -->
 			<div class="why-left reveal-item">
-				<span class="section-eyebrow">WHY PEOPLE CHOOSE US</span>
-				<h2>Your Goals. Our Guidance. <br><span class="highlight" style="color: #1e8bb3;">Stronger Future Together.</span></h2>
-				
+				<span class="section-eyebrow" style="color: var(--text-white);">WHY PEOPLE CHOOSE US</span>
+				<h2>Your Goals. Our Guidance. <br><span class="highlight" style="color: #1e8bb3;">Stronger Future
+						Together.</span></h2>
+
 				<div class="testimonial-gallery-wrapper">
 					<div class="testimonial-gallery" id="testimonial-gallery">
 						<!-- Card 1 -->
 						<div class="testimonial-gallery-card active-card" data-index="0">
 							<i class="fa-solid fa-quote-left quote-icon-gold"></i>
-							<p class="testimonial-text">"VittaVeda helped me align my financial goals with real investment solutions. Their transparent advice and data-backed strategies completely changed my approach to wealth building."</p>
+							<p class="testimonial-text">"VittaVeda helped me align my financial goals with real
+								investment solutions. Their transparent advice and data-backed strategies completely
+								changed my approach to wealth building."</p>
 							<div class="author-block">
 								<img src="images/about/2.jpg" alt="Mary Christiona" class="author-avatar">
 								<div class="author-info">
@@ -308,7 +343,9 @@
 						<!-- Card 2 -->
 						<div class="testimonial-gallery-card" data-index="1">
 							<i class="fa-solid fa-quote-left quote-icon-gold"></i>
-							<p class="testimonial-text">"The level of professionalism and client-first commitment at VittaVeda is unmatched. They took time to analyze my entire portfolio, offering options other advisors never mentioned."</p>
+							<p class="testimonial-text">"The level of professionalism and client-first commitment at
+								VittaVeda is unmatched. They took time to analyze my entire portfolio, offering options
+								other advisors never mentioned."</p>
 							<div class="author-block">
 								<img src="images/about/2.jpg" alt="Vikram Singh" class="author-avatar">
 								<div class="author-info">
@@ -320,7 +357,9 @@
 						<!-- Card 3 -->
 						<div class="testimonial-gallery-card" data-index="2">
 							<i class="fa-solid fa-quote-left quote-icon-gold"></i>
-							<p class="testimonial-text">"Managing taxes and retirement was a massive headache. VittaVeda designed a comprehensive plan that reduced my liabilities while protecting my family's wealth. A true partner!"</p>
+							<p class="testimonial-text">"Managing taxes and retirement was a massive headache. VittaVeda
+								designed a comprehensive plan that reduced my liabilities while protecting my family's
+								wealth. A true partner!"</p>
 							<div class="author-block">
 								<img src="images/about/2.jpg" alt="Priya Sharma" class="author-avatar">
 								<div class="author-info">
@@ -332,7 +371,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Right Column: Features -->
 			<div class="why-right reveal-item">
 				<div class="feature-row">
@@ -341,27 +380,30 @@
 					</div>
 					<div class="feature-details">
 						<h3>Fast Approval</h3>
-						<p>We streamline the paperwork and process to ensure your funding and financial applications are approved quickly.</p>
+						<p>We streamline the paperwork and process to ensure your funding and financial applications are
+							approved quickly.</p>
 					</div>
 				</div>
-				
+
 				<div class="feature-row">
 					<div class="feature-icon-box">
 						<i class="fa-solid fa-arrows-spin"></i>
 					</div>
 					<div class="feature-details">
 						<h3>Refinancing</h3>
-						<p>Optimize your current liabilities and debts with lower interest rates and flexible payment structures.</p>
+						<p>Optimize your current liabilities and debts with lower interest rates and flexible payment
+							structures.</p>
 					</div>
 				</div>
-				
+
 				<div class="feature-row">
 					<div class="feature-icon-box">
 						<i class="fa-solid fa-file-invoice"></i>
 					</div>
 					<div class="feature-details">
 						<h3>Free Documentation</h3>
-						<p>Comprehensive assistance with KYC, financial audits, and filings without any hidden consultation charges.</p>
+						<p>Comprehensive assistance with KYC, financial audits, and filings without any hidden
+							consultation charges.</p>
 					</div>
 				</div>
 			</div>
@@ -372,7 +414,7 @@
 	<section class="partners" id="partners">
 		<div class="partners-container">
 			<h2>OUR TIE UP COMPANIES</h2>
-			
+
 			<div class="marquee-viewport">
 				<div class="marquee-track">
 					<!-- Original set (All 13 Partner Logos) -->
@@ -383,7 +425,8 @@
 						<img src="images/Logos/tieup/Axis_Bank_logo.svg.png" alt="Axis Bank">
 					</div>
 					<div class="partner-logo">
-						<img src="images/Logos/tieup/motilal-oswal-financial-services-logo-png_seeklogo-630558.png" alt="Motilal Oswal">
+						<img src="images/Logos/tieup/motilal-oswal-financial-services-logo-png_seeklogo-630558.png"
+							alt="Motilal Oswal">
 					</div>
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/Choice_brokering.png" alt="Choice Brokering">
@@ -401,7 +444,8 @@
 						<img src="images/Logos/tieup/Indisund Bank.png" alt="IndusInd Bank">
 					</div>
 					<div class="partner-logo">
-						<img src="images/Logos/tieup/Landmark-Insurance-Financial-Group-Inc.-Logo-800.png" alt="Landmark Insurance">
+						<img src="images/Logos/tieup/Landmark-Insurance-Financial-Group-Inc.-Logo-800.png"
+							alt="Landmark Insurance">
 					</div>
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/Prudent_Corporate_Logo600x315px.png" alt="Prudent Corporate">
@@ -415,7 +459,7 @@
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/ruloans_white_nobg.png" alt="Ruloans">
 					</div>
-					
+
 					<!-- Duplicated set for seamless loop -->
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/Kotak_Mahindra_Bank_logo.png" alt="Kotak Mahindra Bank">
@@ -424,7 +468,8 @@
 						<img src="images/Logos/tieup/Axis_Bank_logo.svg.png" alt="Axis Bank">
 					</div>
 					<div class="partner-logo">
-						<img src="images/Logos/tieup/motilal-oswal-financial-services-logo-png_seeklogo-630558.png" alt="Motilal Oswal">
+						<img src="images/Logos/tieup/motilal-oswal-financial-services-logo-png_seeklogo-630558.png"
+							alt="Motilal Oswal">
 					</div>
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/Choice_brokering.png" alt="Choice Brokering">
@@ -442,7 +487,8 @@
 						<img src="images/Logos/tieup/Indisund Bank.png" alt="IndusInd Bank">
 					</div>
 					<div class="partner-logo">
-						<img src="images/Logos/tieup/Landmark-Insurance-Financial-Group-Inc.-Logo-800.png" alt="Landmark Insurance">
+						<img src="images/Logos/tieup/Landmark-Insurance-Financial-Group-Inc.-Logo-800.png"
+							alt="Landmark Insurance">
 					</div>
 					<div class="partner-logo">
 						<img src="images/Logos/tieup/Prudent_Corporate_Logo600x315px.png" alt="Prudent Corporate">
@@ -471,18 +517,18 @@
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1884391696013!2d72.95315047585098!3d19.21096704778107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b938927ea1bf%3A0xe67db073be4cf805!2sLokmanya%20Nagar%20Pada%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400606!5e0!3m2!1sen!2sin!4v1719398000000!5m2!1sen!2sin"
 						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade" aria-label="Office Map Location"></iframe>
-					
+
 					<div class="map-overlay-card">
 						<h4>VittaVeda Financial Services</h4>
 						<p>Lokmanya Nagar, Thane</p>
 						<p>Maharashtra 400606</p>
 					</div>
 				</div>
-				
+
 				<div class="contact-chips">
 					<div class="contact-chip">
 						<i class="fa-solid fa-location-dot"></i>
-						<span>Lokmanya Nagar, Thane</span>
+						<span>Shop No 5, Building no 4, Laxmi Park Phase 1, Lokmanya Nagar, Thane west 400606</span>
 					</div>
 					<div class="contact-chip">
 						<i class="fa-solid fa-clock"></i>
@@ -490,7 +536,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Right Column: Form -->
 			<div class="contact-right reveal-item">
 				<div class="form-heading-wrapper">
@@ -498,8 +544,9 @@
 					<h2>Request a Free Consultation</h2>
 				</div>
 				<div class="title-underline" style="margin-bottom: 24px;"></div>
-				
-				<form action="https://st.ourhtmldemo.com/template/finance-press/inc/sendemail.php" method="POST" class="consultation-form" id="consultationForm">
+
+				<form action="https://st.ourhtmldemo.com/template/finance-press/inc/sendemail.php" method="POST"
+					class="consultation-form" id="consultationForm">
 					<div class="form-grid">
 						<div class="form-group">
 							<input type="text" name="fname" id="fname" placeholder="First Name *" required>
@@ -514,7 +561,7 @@
 							<input type="tel" name="phone" id="phone" placeholder="Phone *" required>
 						</div>
 					</div>
-					
+
 					<div class="form-group">
 						<select name="category" id="category" required>
 							<option value="" disabled selected>Private Banking</option>
@@ -523,12 +570,13 @@
 							<option value="Loans">Loans</option>
 						</select>
 					</div>
-					
+
 					<div class="form-group">
 						<textarea name="message" id="message" placeholder="Special Request..." rows="4"></textarea>
 					</div>
-					
-					<button type="submit" class="btn-submit" id="submitBtn">Submit Now <i class="fa-solid fa-arrow-right"></i></button>
+
+					<button type="submit" class="btn-submit" id="submitBtn">Submit Now <i
+							class="fa-solid fa-arrow-right"></i></button>
 				</form>
 			</div>
 		</div>
@@ -540,13 +588,15 @@
 			<!-- Col 1 -->
 			<div class="footer-col reveal-item">
 				<div class="footer-logo">
-					<img src="images/Logos/circle-logo.png" alt="VittaVeda Circle Logo" style="width: 44px; height: 44px; border-radius: 50%; object-fit: contain;">
+					<img src="images/Logos/circle-logo.png" alt="VittaVeda Circle Logo"
+						style="width: 44px; height: 44px; border-radius: 50%; object-fit: contain;">
 					<span>VITTA VEDA</span>
 				</div>
-				<p class="footer-desc">Professional financial planners and wealth advisory brokers committed to security, growth, and sustainable financial protection.</p>
+				<p class="footer-desc">Professional financial planners and wealth advisory brokers committed to
+					security, growth, and sustainable financial protection.</p>
 				<a href="#about" class="btn-outline-footer">Read More <i class="fa-solid fa-arrow-right"></i></a>
 			</div>
-			
+
 			<!-- Col 2 -->
 			<div class="footer-col reveal-item" style="animation-delay: 0.05s;">
 				<h3>Useful Links</h3>
@@ -558,14 +608,14 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
-			
+
 			<!-- Col 3 -->
 			<div class="footer-col reveal-item" style="animation-delay: 0.1s;">
 				<h3>Contact Us</h3>
 				<ul class="footer-contact">
 					<li>
 						<i class="fa-solid fa-location-dot"></i>
-						<span>Shop No 5, Laxmi Park Phase 1, Lokmanya Nagar, Thane</span>
+						<span>Shop No 5, Building no 4, Laxmi Park Phase 1, Lokmanya Nagar, Thane west 400606</span>
 					</li>
 					<li>
 						<i class="fa-solid fa-envelope"></i>
@@ -579,10 +629,11 @@
 				</ul>
 			</div>
 		</div>
-		
+
 		<div class="footer-bottom">
 			<div class="footer-bottom-container">
-				<p>Developed and Maintained by <a href="https://sync-edge.in/" target="_blank" style="color: var(--gold-accent); text-decoration: underline;">SyncEdge</a></p>
+				<p>Developed and Maintained by <a href="https://sync-edge.in/" target="_blank"
+						style="color: var(--gold-accent); text-decoration: underline;">SyncEdge</a></p>
 				<div class="footer-bottom-links">
 					<a href="Html/privacy-security-statement.html">Privacy & Security Statement</a>
 				</div>
@@ -591,7 +642,8 @@
 	</footer>
 
 	<!-- Floating WhatsApp Button (Themed) -->
-	<div class="whatsapp-btn" onclick="window.open('https://wa.me/919920777661?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20VittaVeda%20Financial%20Services.', '_blank')">
+	<div class="whatsapp-btn"
+		onclick="window.open('https://wa.me/919920777661?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20VittaVeda%20Financial%20Services.', '_blank')">
 		<i class="fa-brands fa-whatsapp"></i>
 		<div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
 	</div>
@@ -602,7 +654,7 @@
 	<!-- DYNAMIC JAVASCRIPT FEATURES -->
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
-			
+
 			// 1. Sticky Navbar
 			window.addEventListener('scroll', () => {
 				const navbar = document.getElementById('navbar');
@@ -635,7 +687,7 @@
 
 			// 3. Smooth Scroll
 			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-				anchor.addEventListener('click', function(e) {
+				anchor.addEventListener('click', function (e) {
 					e.preventDefault();
 					const targetId = this.getAttribute('href');
 					if (targetId === '#') return;
@@ -653,11 +705,11 @@
 
 			// 4. Custom Gold Line Chart (Hero)
 			const ctxHero = document.getElementById('heroChart').getContext('2d');
-			
+
 			const goldGrad = ctxHero.createLinearGradient(0, 0, 0, 200);
 			goldGrad.addColorStop(0, 'rgba(200, 169, 110, 0.3)');
 			goldGrad.addColorStop(1, 'rgba(20, 18, 12, 0)');
-			
+
 			const heroChart = new Chart(ctxHero, {
 				type: 'line',
 				data: {
@@ -746,7 +798,7 @@
 			// 5. Stats Counter Animation
 			const statsSection = document.getElementById('stats');
 			const counters = document.querySelectorAll('.stat-number');
-			
+
 			const countUp = (el) => {
 				const target = parseInt(el.getAttribute('data-target'));
 				const suffix = el.getAttribute('data-suffix') || '';
@@ -755,7 +807,7 @@
 				const steps = duration / stepTime;
 				const increment = target / steps;
 				let current = 0;
-				
+
 				const timer = setInterval(() => {
 					current += increment;
 					if (current >= target) {
@@ -766,7 +818,7 @@
 					}
 				}, stepTime);
 			};
-			
+
 			const statsObserver = new IntersectionObserver((entries, observer) => {
 				entries.forEach(entry => {
 					if (entry.isIntersecting) {
@@ -775,7 +827,7 @@
 					}
 				});
 			}, { threshold: 0.2 });
-			
+
 			if (statsSection) {
 				statsObserver.observe(statsSection);
 			}
@@ -786,13 +838,13 @@
 				const header = item.querySelector('.accordion-header');
 				header.addEventListener('click', () => {
 					const isActive = item.classList.contains('active');
-					
+
 					accordionItems.forEach(innerItem => {
 						innerItem.classList.remove('active');
 						innerItem.querySelector('.accordion-content').style.maxHeight = null;
 						innerItem.querySelector('.icon i').className = 'fa-solid fa-plus';
 					});
-					
+
 					if (!isActive) {
 						item.classList.add('active');
 						const content = item.querySelector('.accordion-content');
@@ -805,12 +857,12 @@
 			// 7. About Left Slide In + Typewriter Animation on Scroll
 			const aboutSection = document.getElementById('about');
 			const aboutLeftCol = document.getElementById('about-left-col');
-			
+
 			const typeText = "We Are VittaVeda: Committed to your financial growth, wealth protection, and long-term success.";
 			let typeIndex = 0;
 			const typeSpeed = 40;
 			const typeEl = document.getElementById('typing-text');
-			
+
 			function typeWriter() {
 				if (typeIndex < typeText.length) {
 					typeEl.innerHTML += typeText.charAt(typeIndex);
@@ -818,7 +870,7 @@
 					setTimeout(typeWriter, typeSpeed);
 				}
 			}
-			
+
 			const aboutObserver = new IntersectionObserver((entries, observer) => {
 				entries.forEach(entry => {
 					if (entry.isIntersecting) {
@@ -828,7 +880,7 @@
 					}
 				});
 			}, { threshold: 0.15 });
-			
+
 			if (aboutSection) {
 				aboutObserver.observe(aboutSection);
 			}
@@ -837,10 +889,10 @@
 			const valTrack = document.getElementById('value-marquee-track');
 			const valItems = document.querySelectorAll('.value-item');
 			let valIndex = 0;
-			
+
 			setInterval(() => {
 				valIndex = (valIndex + 1) % valItems.length;
-				
+
 				valItems.forEach((item, idx) => {
 					if (idx === valIndex) {
 						item.classList.add('active-val', 'pulse-icon');
@@ -848,14 +900,14 @@
 						item.classList.remove('active-val', 'pulse-icon');
 					}
 				});
-				
-				const itemHeight = 64; 
+
+				const itemHeight = 64;
 				let offset = valIndex * itemHeight;
-				
+
 				if (valIndex > valItems.length - 3) {
 					offset = (valItems.length - 3) * itemHeight;
 				}
-				
+
 				valTrack.style.transform = `translateY(-${offset}px)`;
 			}, 2000);
 
@@ -866,20 +918,20 @@
 			const srvNext = document.getElementById('srv-next');
 			let srvIndex = 0;
 			let srvTimer;
-			
+
 			const getCardsPerView = () => {
 				if (window.innerWidth > 1024) return 4;
 				if (window.innerWidth > 768) return 2;
 				return 1;
 			};
-			
+
 			const updateSrvCarousel = () => {
 				const cardsPerView = getCardsPerView();
 				const maxIdx = srvCards.length - cardsPerView;
-				
+
 				if (srvIndex < 0) srvIndex = 0;
 				if (srvIndex > maxIdx) srvIndex = maxIdx;
-				
+
 				srvCards.forEach((card, idx) => {
 					if (idx === srvIndex) {
 						card.classList.add('active-slide');
@@ -887,13 +939,13 @@
 						card.classList.remove('active-slide');
 					}
 				});
-				
+
 				const cardWidth = srvCards[0].offsetWidth;
-				const gap = 24; 
+				const gap = 24;
 				const offset = srvIndex * (cardWidth + gap);
 				srvTrack.style.transform = `translateX(-${offset}px)`;
 			};
-			
+
 			const nextSrv = () => {
 				const cardsPerView = getCardsPerView();
 				if (srvIndex < srvCards.length - cardsPerView) {
@@ -903,7 +955,7 @@
 				}
 				updateSrvCarousel();
 			};
-			
+
 			const prevSrv = () => {
 				if (srvIndex > 0) {
 					srvIndex--;
@@ -913,22 +965,22 @@
 				}
 				updateSrvCarousel();
 			};
-			
+
 			const startSrvTimer = () => {
 				clearInterval(srvTimer);
 				srvTimer = setInterval(nextSrv, 2500);
 			};
-			
+
 			srvNext.addEventListener('click', () => {
 				nextSrv();
 				startSrvTimer();
 			});
-			
+
 			srvPrev.addEventListener('click', () => {
 				prevSrv();
 				startSrvTimer();
 			});
-			
+
 			const carouselViewport = document.querySelector('.carousel-viewport');
 			carouselViewport.addEventListener('mouseenter', () => {
 				clearInterval(srvTimer);
@@ -936,7 +988,7 @@
 			carouselViewport.addEventListener('mouseleave', () => {
 				startSrvTimer();
 			});
-			
+
 			updateSrvCarousel();
 			startSrvTimer();
 			window.addEventListener('resize', updateSrvCarousel);
@@ -949,7 +1001,7 @@
 			let startX;
 			let scrollLeftVal;
 			let testIndex = 0;
-			
+
 			const startTestGalleryScroll = () => {
 				clearInterval(testScrollTimer);
 				testScrollTimer = setInterval(() => {
@@ -962,27 +1014,27 @@
 					});
 				}, 3500);
 			};
-			
+
 			const updateActiveTestimonial = () => {
 				const galleryRect = gallery.getBoundingClientRect();
 				const galleryCenter = galleryRect.left + galleryRect.width / 2;
-				
+
 				let closestCard = null;
 				let minDistance = Infinity;
 				let closestIdx = 0;
-				
+
 				testCards.forEach((card, idx) => {
 					const cardRect = card.getBoundingClientRect();
 					const cardCenter = cardRect.left + cardRect.width / 2;
 					const distance = Math.abs(galleryCenter - cardCenter);
-					
+
 					if (distance < minDistance) {
 						minDistance = distance;
 						closestCard = card;
 						closestIdx = idx;
 					}
 				});
-				
+
 				testCards.forEach(card => {
 					if (card === closestCard) {
 						card.classList.add('active-card');
@@ -992,9 +1044,9 @@
 				});
 				testIndex = closestIdx;
 			};
-			
+
 			gallery.addEventListener('scroll', updateActiveTestimonial);
-			
+
 			gallery.addEventListener('mousedown', (e) => {
 				isDragging = true;
 				gallery.style.cursor = 'grabbing';
@@ -1002,19 +1054,19 @@
 				scrollLeftVal = gallery.scrollLeft;
 				clearInterval(testScrollTimer);
 			});
-			
+
 			gallery.addEventListener('mouseleave', () => {
 				isDragging = false;
 				gallery.style.cursor = 'grab';
 				startTestGalleryScroll();
 			});
-			
+
 			gallery.addEventListener('mouseup', () => {
 				isDragging = false;
 				gallery.style.cursor = 'grab';
 				startTestGalleryScroll();
 			});
-			
+
 			gallery.addEventListener('mousemove', (e) => {
 				if (!isDragging) return;
 				e.preventDefault();
@@ -1022,11 +1074,11 @@
 				const walk = (x - startX) * 1.5;
 				gallery.scrollLeft = scrollLeftVal - walk;
 			});
-			
+
 			gallery.addEventListener('mouseenter', () => {
 				clearInterval(testScrollTimer);
 			});
-			
+
 			updateActiveTestimonial();
 			startTestGalleryScroll();
 
@@ -1040,27 +1092,27 @@
 					}
 				});
 			}, { threshold: 0.15 });
-			
+
 			revealItems.forEach(item => revealObserver.observe(item));
 
 			// 12. Form Validation with Shake, Ripple & Success state
 			const form = document.getElementById('consultationForm');
 			const submitBtn = document.getElementById('submitBtn');
 			const toastContainer = document.getElementById('toastContainer');
-			
+
 			// Submit button ripple effect
-			submitBtn.addEventListener('click', function(e) {
+			submitBtn.addEventListener('click', function (e) {
 				const rect = this.getBoundingClientRect();
 				const x = e.clientX - rect.left;
 				const y = e.clientY - rect.top;
-				
+
 				const ripple = document.createElement('span');
 				ripple.className = 'ripple';
 				ripple.style.left = x + 'px';
 				ripple.style.top = y + 'px';
-				
+
 				this.appendChild(ripple);
-				
+
 				setTimeout(() => {
 					ripple.remove();
 				}, 600);
@@ -1068,16 +1120,16 @@
 
 			form.addEventListener('submit', (e) => {
 				e.preventDefault();
-				
+
 				let hasError = false;
 				const requiredInputs = form.querySelectorAll('[required]');
-				
+
 				requiredInputs.forEach(input => {
 					if (!input.value.trim()) {
 						hasError = true;
 						input.classList.add('error');
 						input.closest('.form-group').classList.add('shake');
-						
+
 						setTimeout(() => {
 							input.closest('.form-group').classList.remove('shake');
 						}, 500);
@@ -1085,23 +1137,23 @@
 						input.classList.remove('error');
 					}
 				});
-				
+
 				if (!hasError) {
 					// Success button animation
 					submitBtn.innerHTML = '<i class="fa-solid fa-circle-check" style="color: #25D366;"></i> Sent!';
 					submitBtn.style.background = 'linear-gradient(135deg, #25D366, #1b9347)';
-					
+
 					// Success Toast Notification
 					const toast = document.createElement('div');
 					toast.className = 'toast';
 					toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #00c853; font-size: 1.2rem;"></i><span>Consultation request submitted successfully!</span>`;
 					toastContainer.appendChild(toast);
-					
+
 					setTimeout(() => {
 						toast.style.animation = 'slideInToast 0.3s reverse';
 						setTimeout(() => toast.remove(), 300);
 					}, 4000);
-					
+
 					setTimeout(() => {
 						submitBtn.innerHTML = 'Submit Now <i class="fa-solid fa-arrow-right"></i>';
 						submitBtn.style.background = '';
@@ -1110,7 +1162,7 @@
 					form.reset();
 				}
 			});
-			
+
 			form.querySelectorAll('input, select, textarea').forEach(input => {
 				input.addEventListener('input', () => {
 					input.classList.remove('error');
@@ -1119,4 +1171,5 @@
 		});
 	</script>
 </body>
+
 </html>
