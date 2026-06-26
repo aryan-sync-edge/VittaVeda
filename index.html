@@ -545,8 +545,7 @@
 				</div>
 				<div class="title-underline" style="margin-bottom: 24px;"></div>
 
-				<form action="form.php" method="POST"
-					class="consultation-form" id="consultationForm">
+				<form action="form.php" method="POST" class="consultation-form" id="consultationForm">
 					<div class="form-grid">
 						<div class="form-group">
 							<input type="text" name="fname" id="fname" placeholder="First Name *" required>
@@ -1108,22 +1107,22 @@
 			const toastContainer = document.getElementById('toastContainer');
 
 			// Submit button ripple effect
-			submitBtn.addEventListener('click', function (e) {
-				const rect = this.getBoundingClientRect();
-				const x = e.clientX - rect.left;
-				const y = e.clientY - rect.top;
+			// submitBtn.addEventListener('click', function (e) {
+			// 	const rect = this.getBoundingClientRect();
+			// 	const x = e.clientX - rect.left;
+			// 	const y = e.clientY - rect.top;
 
-				const ripple = document.createElement('span');
-				ripple.className = 'ripple';
-				ripple.style.left = x + 'px';
-				ripple.style.top = y + 'px';
+			// 	const ripple = document.createElement('span');
+			// 	ripple.className = 'ripple';
+			// 	ripple.style.left = x + 'px';
+			// 	ripple.style.top = y + 'px';
 
-				this.appendChild(ripple);
+			// 	this.appendChild(ripple);
 
-				setTimeout(() => {
-					ripple.remove();
-				}, 600);
-			});
+			// 	setTimeout(() => {
+			// 		ripple.remove();
+			// 	}, 600);
+			// });
 
 			form.addEventListener('submit', (e) => {
 				//e.preventDefault();
@@ -1166,7 +1165,7 @@
 						submitBtn.style.background = '';
 					}, 3000);
 
-					form.reset();
+					// form.reset();
 				}
 			});
 
