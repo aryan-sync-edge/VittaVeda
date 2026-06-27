@@ -13,9 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$phone = trim($_POST['phone']);
 	$category = trim($_POST['category']);
 	$message = trim($_POST['message']);
-	echo "<pre>";
-	print_r($_POST);
-	echo "</pre>";
 	if(empty($firstName) || empty($lastName) || empty($email) || empty($phone) || empty($category)){
 			die("Please fill all required fields.");
 		}
@@ -29,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	$stmt = $conn->prepare("INSERT INTO TBL_CONSULTATION_REQUESTS(FIRST_NAME, LAST_NAME, EMAIL, PHONE, SERVICE_CATEGORY, MESSAGE) VALUES (?,?,?,?,?,?)");
 	$stmt->bind_param("ssssss", $firstName, $lastName, $email, $phone, $category, $message);
 	if($stmt->execute()){
+		require_once "mail.php";
 		echo "Data saved Successfully!";
-		echo "Inserted ID: " . $conn->insert_id;
 	} else {
 		echo "Error: " . $stmt->error;
 	}
